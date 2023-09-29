@@ -1,0 +1,18 @@
+h1{
+  text-align: center;
+}
+
+#serch{
+  text-align: center;
+}
+
+#info{
+  display: none;
+  background-color: rgb(196, 165, 165);
+  padding: 5%;
+  margin: 5%;
+  box-shadow: 2px 2px 2px rgb(83, 83, 84);
+}
+
+
+
