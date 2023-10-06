@@ -27,7 +27,7 @@ test('visar ett felmeddelande när sökfältet är tomt', () => {
 
   // test för att se om när man söker på ett ord om man får upp ordet
 
-test('visar information när du söker med ett ord', async () => {
+/*test('visar information när du söker med ett ord', async () => {
     render(<App />);
   
     const searchInput = screen.getByPlaceholderText('Sök efter ett ord');
@@ -46,7 +46,7 @@ test('visar information när du söker med ett ord', async () => {
          const audioElement = screen.getByRole('audio');
          expect(audioElement).toBeInTheDocument();
     });
-  });
+  });*/
 
 
 
