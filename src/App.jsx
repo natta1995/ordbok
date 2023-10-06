@@ -80,7 +80,7 @@ function App() {
           {result.meanings.map((meaning, meaningIndex) => (
             <div key={meaningIndex}>
               <h3>{meaning.partOfSpeech}</h3>
-              <ul>
+              <ul id='List'>
                 {meaning.definitions.map((definition, defIndex) => (
                   <li key={defIndex}>{definition.definition}</li>
                 ))}
