@@ -86,7 +86,7 @@ test('visar upp verb när renderas', async () => {
 
 // test för audio
 
-test('visar ljudfil när den finns tillgänglig', async () => {
+test('visar två ljudfiler när de är tillgängliga', async () => {
   render(<App />);
 
   const searchInput = screen.getByPlaceholderText('Sök efter ett ord');
@@ -98,8 +98,9 @@ test('visar ljudfil när den finns tillgänglig', async () => {
 
   await waitFor(() => {
     const audioElements = screen.queryAllByTestId('audio-element');
-    expect(audioElements).not.toHaveLength(0);
+    expect(audioElements).toHaveLength(2);
   });
 });
+
 
 
