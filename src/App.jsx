@@ -70,7 +70,7 @@ function App() {
             <div key={phoneticIndex}>
               <p>Phonetic: {phonetic.text}</p>
               {phonetic.audio && (
-                <audio controls>
+                <audio data-testid="audio-element" controls>
                   <source src={phonetic.audio} type="audio/mpeg" />
                   Your browser does not support the audio element.
                 </audio>

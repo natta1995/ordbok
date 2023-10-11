@@ -83,9 +83,20 @@ test('visar upp verb när renderas', async () => {
   });
 });
 
+test('visar ljudfil när den finns tillgänglig', async () => {
+  render(<App />);
 
+  const searchInput = screen.getByPlaceholderText('Sök efter ett ord');
+  const searchButton = screen.getByText('Sök');
 
+  fireEvent.change(searchInput, { target: { value: 'apple' } });
 
+  fireEvent.click(searchButton);
 
+  await waitFor(() => {
+    const audioElements = screen.queryAllByTestId('audio-element');
+    expect(audioElements).not.toHaveLength(0);
+  });
+});
 
 
